@@ -10,6 +10,11 @@ OCR server written in pytorch
 ------------------------------------------------------------------
 
 ## History
+- 22 Dec 2022 - Version 1.0.2.2
+    - 改使用 .Net FrameWork 4.8 
+    - Revised by [@letian Chang](https://lloydztw.github.io/mysite/).    
+    <br/>
+
 - 21 Dec 2022 - Version 1.0.1
     - 創建版
     - Revised by [@letian Chang](https://lloydztw.github.io/mysite/).
@@ -26,7 +31,7 @@ OCR server written in pytorch
 
 # 如何 【全部重新】 安裝
 (0) 下載以下檔案 
-- http://download.jeteazy.com/LeTian/EzFace/EzFaceDemo_Setup.exe
+- http://download.jeteazy.com/LeTian/EzFace/EzFaceDemo_Setup_1.0.2.2.exe
 - http://download.jeteazy.com/LeTian/EzFace/requirements.txt 
 <br/> 
 至暫存資料夾, <br/>
@@ -58,7 +63,7 @@ conda activate face_cn
 (3) 安裝 python 第三方套件,<br/>
     用 command line 執行:
 ```
-pip install -r requirements.txt
+conda install --yes --file requirements.txt
 ```
 
 ##### ( 檔案 requirements.txt 條列有所需要的第三方套件 ) <br/><br/>
