@@ -27,7 +27,7 @@ OCR server written in pytorch
 # 如何 【全部重新】 安裝
 (0) 下載以下檔案 
 - http://download.jeteazy.com/LeTian/EzFace/EzFaceDemo_Setup.exe
-- http://download.jeteazy.com/LeTian/EzFace/requirement.txt 
+- http://download.jeteazy.com/LeTian/EzFace/requirements.txt 
 <br/> 
 至暫存資料夾, <br/>
 
@@ -58,8 +58,11 @@ conda activate face_cn
 (3) 安裝 python 第三方套件,<br/>
     用 command line 執行:
 ```
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
+
+##### ( 檔案 requirements.txt 條列有所需要的第三方套件 ) <br/><br/>
+
 ------------------------------------------------------------------
 (4) 安裝 C# demo 程式專案,<br/>
     用 command line 執行:
