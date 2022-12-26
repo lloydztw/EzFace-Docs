@@ -10,6 +10,13 @@ OCR server written in pytorch
 ------------------------------------------------------------------
 
 ## History
+- 26 Dec 2022 - Version 1.0.3.2
+    - 增加繪製辨識結果圖
+    - 增加連續辨識範例 (performConiRecognition)
+    - asyncRun 使用 BeginInvoke (thread)
+    - Revised by [@letian Chang](https://lloydztw.github.io/mysite/).    
+    <br/>
+
 - 22 Dec 2022 - Version 1.0.2.2
     - 改使用 .Net FrameWork 4.8 
     - Revised by [@letian Chang](https://lloydztw.github.io/mysite/).    
@@ -31,7 +38,7 @@ OCR server written in pytorch
 
 # 如何 【全部重新】 安裝
 (0) 下載以下檔案 
-- http://download.jeteazy.com/LeTian/EzFace/EzFaceDemo_Setup_1.0.2.2.exe
+- http://download.jeteazy.com/LeTian/EzFace/EzFaceDemo_Setup_1.0.3.2.exe
 - http://download.jeteazy.com/LeTian/EzFace/requirements.txt 
 <br/> 
 至暫存資料夾, <br/>
@@ -61,9 +68,16 @@ conda activate face_cn
 ```
 ------------------------------------------------------------------
 (3) 安裝 python 第三方套件,<br/>
-    用 command line 執行:
+
+(3.1) 下載並安裝 CMake 與 Visual Studio 2022
+
+(3.2) 用 command line 執行:
 ```
 conda install --yes --file requirements.txt
+```
+##### 或
+```
+pip install -r requirements.txt
 ```
 
 ##### ( 檔案 requirements.txt 條列有所需要的第三方套件 ) <br/><br/>
