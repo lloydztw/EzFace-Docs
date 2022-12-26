@@ -31,7 +31,8 @@ OCR server written in pytorch
 ### Requirements
 - anaconda
 - python 3.8
-- visual studio (for client demo)
+- CMake
+- visual studio 2022
 
 
 <br/><br/>
