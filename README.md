@@ -77,11 +77,12 @@ conda activate face_cn
 (3) 安裝 c++/c# 第三方套件,<br/>
 - 下載並安裝 Visual Studio 2022
 - 下載並安裝 CMake
-- 下載並安裝 nVidia CUDA tool kits 11.3
+- 下載並安裝 nVidia CUDA 11.3
+	- https://developer.nvidia.com/cuda-11.3.0-download-archive
 
 ------------------------------------------------------------------
 (4) 安裝 python 第三方套件,<br/>
-(4.1) 安裝 pytorch 用 command line 執行:
+(4.1) 用 command line 執行:
 ```
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
 ```
