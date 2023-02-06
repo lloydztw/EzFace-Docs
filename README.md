@@ -10,18 +10,22 @@ OCR server written in pytorch
 ------------------------------------------------------------------
 
 ## History
+- 07 Jsn 2023 - Version 2.0.0.0
+    - 使用新模型, 可以偵測 有戴口罩 之人像
+    - 必須使用 cuda 11.3
+    - Revised by [@letian Chang](https://lloydztw.github.io/mysite/).    
+    <br/>
+
 - 26 Dec 2022 - Version 1.0.3.2
     - 增加繪製辨識結果圖
     - 增加連續辨識範例 (performConiRecognition)
     - asyncRun 使用 BeginInvoke (thread)
     - Revised by [@letian Chang](https://lloydztw.github.io/mysite/).    
     <br/>
-
 - 22 Dec 2022 - Version 1.0.2.2
     - 改使用 .Net FrameWork 4.8 
     - Revised by [@letian Chang](https://lloydztw.github.io/mysite/).    
     <br/>
-
 - 21 Dec 2022 - Version 1.0.1
     - 創建版
     - Revised by [@letian Chang](https://lloydztw.github.io/mysite/).
@@ -39,8 +43,9 @@ OCR server written in pytorch
 
 # 如何 【全部重新】 安裝
 (0) 下載以下檔案 
-- http://download.jeteazy.com/LeTian/EzFace/EzFaceDemo_Setup_1.0.3.2.exe
-- http://download.jeteazy.com/LeTian/EzFace/requirements.txt 
+- http://download.jeteazy.com/LeTian/EzFace/EzFaceDemo_Setup_2.0.0.0.exe
+- http://download.jeteazy.com/LeTian/EzFace/requirements_2.txt 
+
 <br/> 
 至暫存資料夾, <br/>
 
@@ -57,40 +62,48 @@ OCR server written in pytorch
 conda deactivate
 conda env remove -n face_cn
 ```
-------------------------------------------------------------------
-(2) 安裝 python 3.8 虛擬環境,<br/> 
-    用 command line 執行:
+(2.1) 安裝 python 3.8 虛擬環境,<br/> 
+    用 command line 執行:<br/> 
+    (如果目前已經有 python 3.8 名稱為 face_cn 的虛擬環境, 可跳過此步驟.)
 ```
 conda create -n face_cn python=3.8
 ```
+(2.2) 進入 face_cn 虛擬環境<br/>
 成功後,手動鍵入:
 ```    
 conda activate face_cn
 ```
 ------------------------------------------------------------------
-(3) 安裝 python 第三方套件,<br/>
+(3) 安裝 c++/c# 第三方套件,<br/>
+- 下載並安裝 Visual Studio 2022
+- 下載並安裝 CMake
+- 下載並安裝 nVidia CUDA tool kits 11.3
 
-(3.1) 下載並安裝 CMake 與 Visual Studio 2022
-
-(3.2) 用 command line 執行:
+------------------------------------------------------------------
+(4) 安裝 python 第三方套件,<br/>
+(4.1) 安裝 pytorch 用 command line 執行:
 ```
-conda install --yes --file requirements.txt
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
+```
+(4.2) 用 command line 執行:
+```
+conda install --yes --file requirements_2.txt
 ```
 ##### 或
 ```
-pip install -r requirements.txt
+pip install -r requirements_2.txt
 ```
 
-##### ( 檔案 requirements.txt 條列有所需要的第三方套件 ) <br/><br/>
+##### ( 檔案 requirements_2.txt 條列有所需要的第三方套件 ) <br/><br/>
 
 ------------------------------------------------------------------
-(4) 安裝 C# demo 程式專案,<br/>
+(5) 安裝 C# demo 程式專案,<br/>
     用 command line 執行:
 ```
-EzFaceDemo_Setup.exe
+EzFaceDemo_Setup_2.0.0.0.exe
 ```
 ------------------------------------------------------------------
-(5) 用 visual studio 2022 開啟專案
+(6) 用 visual studio 2022 開啟專案
 - D:\AUTOMATION\Eazy Face Demo\C#\EzFaceClientDemo_CN.sln
 
 ------------------------------------------------------------------
