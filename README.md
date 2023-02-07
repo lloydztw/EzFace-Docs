@@ -10,7 +10,7 @@ OCR server written in pytorch
 ------------------------------------------------------------------
 
 ## History
-- 07 Jsn 2023 - Version 2.0.0.0
+- 07 Jsn 2023 - Version 2.0.0.1
     - 使用新模型, 可以偵測 有戴口罩 之人像
     - 必須使用 cuda 11.3
     - Revised by [@letian Chang](https://lloydztw.github.io/mysite/).    
@@ -43,7 +43,7 @@ OCR server written in pytorch
 
 # 如何 【全部重新】 安裝
 (0) 下載以下檔案 
-- http://download.jeteazy.com/LeTian/EzFace/EzFaceDemo_Setup_2.0.0.0.exe
+- http://download.jeteazy.com/LeTian/EzFace/EzFaceDemo_Setup_2.0.0.1.exe
 - http://download.jeteazy.com/LeTian/EzFace/requirements_2.txt 
 
 <br/> 
@@ -77,12 +77,11 @@ conda activate face_cn
 (3) 安裝 c++/c# 第三方套件,<br/>
 - 下載並安裝 Visual Studio 2022
 - 下載並安裝 CMake
-- 下載並安裝 nVidia CUDA 11.3
-	- https://developer.nvidia.com/cuda-11.3.0-download-archive
+- 下載並安裝 nVidia CUDA tool kits 11.3
 
 ------------------------------------------------------------------
 (4) 安裝 python 第三方套件,<br/>
-(4.1) 用 command line 執行:
+(4.1) 安裝 pytorch 用 command line 執行:
 ```
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
 ```
