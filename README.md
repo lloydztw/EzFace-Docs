@@ -100,7 +100,7 @@ pip install -r requirements_2.txt
 (5) 安裝 C# demo 程式專案,<br/>
     用 command line 執行:
 ```
-EzFaceDemo_Setup_2.0.0.0.exe
+EzFaceDemo_Setup_2.0.0.1.exe
 ```
 ------------------------------------------------------------------
 (6) 用 visual studio 2022 開啟專案
