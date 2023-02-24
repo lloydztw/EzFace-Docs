@@ -10,7 +10,14 @@ OCR server written in pytorch
 ------------------------------------------------------------------
 
 ## History
-- 07 Jsn 2023 - Version 2.0.0.1
+- 24 Feb 2023 - Version 2.1.0.0
+    - 辨識可以指定部分參與人員
+    - 限定某些接口 (http 端點) 只能在本機操作.
+    - 加入註冊碼機制來綁定單機使用.
+    - Revised by [@letian Chang](https://lloydztw.github.io/mysite/).    
+    <br/>
+
+- 07 Jan 2023 - Version 2.0.0.1
     - 使用新模型, 可以偵測 有戴口罩 之人像
     - 必須使用 cuda 11.3
     - Revised by [@letian Chang](https://lloydztw.github.io/mysite/).    
@@ -43,7 +50,7 @@ OCR server written in pytorch
 
 # 如何 【全部重新】 安裝
 (0) 下載以下檔案 
-- http://download.jeteazy.com/LeTian/EzFace/EzFaceDemo_Setup_2.0.0.1.exe
+- http://download.jeteazy.com/LeTian/EzFace/EzFaceDemo_Setup_2.1.0.0.exe
 - http://download.jeteazy.com/LeTian/EzFace/requirements_2.txt 
 
 <br/> 
@@ -100,7 +107,7 @@ pip install -r requirements_2.txt
 (5) 安裝 C# demo 程式專案,<br/>
     用 command line 執行:
 ```
-EzFaceDemo_Setup_2.0.0.1.exe
+EzFaceDemo_Setup_2.x.x.x.exe
 ```
 ------------------------------------------------------------------
 (6) 用 visual studio 2022 開啟專案
