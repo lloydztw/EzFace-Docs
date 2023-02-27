@@ -10,7 +10,7 @@ OCR server written in pytorch
 ------------------------------------------------------------------
 
 ## History
-- 24 Feb 2023 - Version 2.1.0.0
+- 27 Feb 2023 - Version 2.1.1.0
     - 辨識可以指定部分參與人員
     - 限定某些接口 (http 端點) 只能在本機操作.
     - 加入註冊碼機制來綁定單機使用.
@@ -50,7 +50,7 @@ OCR server written in pytorch
 
 # 如何 【全部重新】 安裝
 (0) 下載以下檔案 
-- http://download.jeteazy.com/LeTian/EzFace/EzFaceDemo_Setup_2.1.0.0.exe
+- http://download.jeteazy.com/LeTian/EzFace/EzFaceDemo_Setup_2.1.1.0.exe
 - http://download.jeteazy.com/LeTian/EzFace/requirements_2.txt 
 
 <br/> 
@@ -84,7 +84,7 @@ conda activate face_cn
 (3) 安裝 c++/c# 第三方套件,<br/>
 - 下載並安裝 Visual Studio 2022
 - 下載並安裝 CMake
-- 下載並安裝 nVidia CUDA tool kits 11.3
+- 下載並安裝 nVidia CUDA tool kits 11.3 (or 11.7)
 
 ------------------------------------------------------------------
 (4) 安裝 python 第三方套件,<br/>
@@ -94,11 +94,11 @@ conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit
 ```
 (4.2) 用 command line 執行:
 ```
-conda install --yes --file requirements_2.txt
+pip install -r requirements_2.txt
 ```
 ##### 或
 ```
-pip install -r requirements_2.txt
+conda install --yes --file requirements_2.txt
 ```
 
 ##### ( 檔案 requirements_2.txt 條列有所需要的第三方套件 ) <br/><br/>
